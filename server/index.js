@@ -15,7 +15,9 @@ if (!config.get("jwtPrivateKey")) {
   process.exit(1);
 }
 
-let mongoDB = "mongodb://127.0.0.1/forum";
+// let mongoDB = "mongodb://127.0.0.1/forum";
+let mongoDB = "mongodb+srv://siddheshkotkar:siddheshkotkar@cluster0.u1w7drd.mongodb.net/?retryWrites=true&w=majority";
+
 
 mongoose
   .connect(mongoDB, {
